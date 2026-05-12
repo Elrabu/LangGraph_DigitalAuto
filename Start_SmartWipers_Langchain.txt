@@ -1,9 +1,12 @@
+Does not need to be started in  virtual environment:
+
+	- Start Ollama Server: ollama serve (optional: ollama pull llama3.1:8b)
+
 Start in virtual environment in SmartWiperAgents: (activate with "source .venv/bin/activate"):
+
+	- fix the Python path with:
+	export PYTHONPATH="/home/elias/projects/SmartWiperApp/gen/vehicle_model:$PYTHONPATH"
 
 	- Start Velocitas Runtime: velocitas exec runtime-local up
 
 	- Run SmartWiper App: python -m app.SmartWiper
-
-Does not need to be started in  virtual environment:
-
-	- Start Ollama Server: ollama serve (optional: ollama pull llama3.1:8b)
